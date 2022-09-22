@@ -51,7 +51,7 @@
       }
       if (decimalPoint === 'round') {
         // return new bigDecimal(Math.round(value.getValue()))
-        return value.floor()
+        return value.round() //floorになっていたことが原因。roundに修正した。
       }
       return value
     }
