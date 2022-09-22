@@ -23,9 +23,9 @@
             const f1 = new bigDecimal(Math.abs(e1));
             const f2 = new bigDecimal(e2);
             switch (op) {
-                case 'plus':
-                    // return decimalPointCalculate(f1.add(f2), decimalPoint)
-                    return decimalPointCalculate(f1.subtract(f2), decimalPoint)
+                case 'plus': //足し算の場合
+                    return decimalPointCalculate(f1.add(f2), decimalPoint)
+                    //return decimalPointCalculate(f1.subtract(f2), decimalPoint)　//subtractは引き算。addは足し算
                 case 'minus':
                     return decimalPointCalculate(f1.subtract(f2), decimalPoint)
                 case 'multiply':
