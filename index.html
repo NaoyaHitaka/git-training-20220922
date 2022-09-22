@@ -38,7 +38,7 @@
           return decimalPointCalculate(f1.subtract(f2), decimalPoint)
         case 'multiply':
           return decimalPointCalculate(f1.multiply(f2), decimalPoint)
-        case 'mod':
+        case 'divide':
            return decimalPointCalculate(f1.divide(f2), decimalPoint)//割り算
           //return decimalPointCalculate(f1.multiply(f2), decimalPoint)
         case 'square':
@@ -79,7 +79,7 @@
     <option id="plus" value="plus">+</option>
     <option id="minus" value="minus">-</option>
     <option id="multiply" value="multiply">×</option>
-    <option id="mod" value="mod">÷</option>
+    <option id="divide" value="divide">÷</option>
     <option id="square" value="square">x²</option>
   </select>
   <label for="second"></label><input type="text" id="second">
